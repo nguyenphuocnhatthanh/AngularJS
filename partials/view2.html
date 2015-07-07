@@ -1,0 +1,7 @@
+<div class="container">
+    <h1>View 2</h1>
+    Name : <input type="text" ng-model="city"/>
+    <ul ng-controller="demoController">
+        <li data-ng-repeat="value in values | filter : city | orderBy : city">{{value.city}}</li>
+    </ul>
+</div>
